@@ -1,0 +1,72 @@
+html,
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#ffffff, #cccccc);
+}
+
+#maze {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid black 5px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.cell {
+    height: 18px;
+    width: 18px;
+    border: solid black 1px;
+    transition: background-color 0.5s ease-in;
+    color: red;
+}
+
+.wall {
+    background-color: black;
+}
+
+.start {
+    background-color: rebeccapurple;
+}
+
+.target {
+    background-color: red;
+}
+
+.visited {
+    background-color: lightgreen;
+}
+
+.path {
+    background-color: lightblue;
+}
+
+button {
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: lightblue;
+    cursor: default;
+}
+
+.btn-row {
+    margin-bottom: 5px;
+}
